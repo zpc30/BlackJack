@@ -1,10 +1,3 @@
-let player = {
-    name: 'Luka',
-    credit: 145,
-    sayHello: function(){
-        console.log('hello');
-    }
-}
 
 let cards = []
 let sum = 0;
@@ -14,9 +7,7 @@ let msg = '';
 let messageEl = document.getElementById('message-el');
 let cardsEl = document.getElementById('cards');
 let sumEl = document.getElementById('sum-el');
-let playerEl = document.getElementById('player-el');
 
-playerEl.textContent = player.name + ': $' + player.credit;
 
 function getRandomCard() {
     let random = Math.floor(Math.random()*13) + 1;
